@@ -41,3 +41,17 @@ table {
     border: 1px solid black;
     height: 2.15em;
   }
+
+    /* FORM ELEMENTS */
+
+input {
+    padding: .5em;
+    width: 150px;
+    background: #FCFCFC;
+    border: 2px solid;
+  }
+  button {
+    padding: .5em;
+    width: 75px;
+    float: right;
+  }
