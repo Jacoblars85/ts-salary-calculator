@@ -35,5 +35,9 @@ function submitButton() {
 
 monthlyCap += getSalaryInput / 12;
 
-
+if (monthlyCap > 20000) {
+    console.log('we spent way to much money', monthlyCap);
+    // document.getElementById('over-budget').style.color = "red";
+    
+}
 }
