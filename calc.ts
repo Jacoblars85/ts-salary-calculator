@@ -10,10 +10,10 @@ function deleteButton() {
 function submitButton() {
     console.log('trying to button');
     
-    let getFirstNameInput = document.getElementById('firstNameInput');
-    let getLastNameInput = document.getElementById('lastNameInput');
-    let getIdInput = document.getElementById('idInput');
-    let getTitleInput = document.getElementById('titleInput');
+    let getFirstNameInput : any = document.getElementById('firstNameInput');
+    let getLastNameInput : any = document.getElementById('lastNameInput');
+    let getIdInput : any = document.getElementById('idInput');
+    let getTitleInput : any = document.getElementById('titleInput');
     let getSalaryInput : any = document.getElementById('annualSalaryInput');
 
     console.log('getFirstNameInput', getFirstNameInput);
@@ -34,4 +34,6 @@ function submitButton() {
   `
 
 monthlyCap += getSalaryInput / 12;
+
+
 }
