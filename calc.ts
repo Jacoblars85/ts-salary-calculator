@@ -19,6 +19,8 @@ function submitButton() {
     console.log('getFirstNameInput', getFirstNameInput);
     
 
+
+    
     let tableBody : any = document.getElementById('tableBody');
 
     tableBody.innerHTML +=
@@ -32,6 +34,8 @@ function submitButton() {
     <td><button onclick='deleteButton(event)'>delete</button></td>
   </tr>
   `
+
+  
 
 monthlyCap += getSalaryInput / 12;
 
