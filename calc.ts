@@ -15,7 +15,9 @@ function submitButton() {
     let getIdInput = document.getElementById('idInput');
     let getTitleInput = document.getElementById('titleInput');
     let getSalaryInput = document.getElementById('annualSalaryInput');
-    
+
     console.log('getFirstNameInput', getFirstNameInput);
     
+
+    let tableBody = document.getElementById('tableBody');
 }
