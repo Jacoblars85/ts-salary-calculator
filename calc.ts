@@ -14,7 +14,7 @@ function submitButton() {
     let getLastNameInput = document.getElementById('lastNameInput');
     let getIdInput = document.getElementById('idInput');
     let getTitleInput = document.getElementById('titleInput');
-    let getSalaryInput = document.getElementById('annualSalaryInput');
+    let getSalaryInput : any = document.getElementById('annualSalaryInput');
 
     console.log('getFirstNameInput', getFirstNameInput);
     
@@ -32,4 +32,6 @@ function submitButton() {
 //     <td><button onclick='deleteButton(event)'>delete</button></td>
 //   </tr>
 //   `
+
+monthlyCap += getSalaryInput / 12;
 }
