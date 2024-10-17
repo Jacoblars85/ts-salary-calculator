@@ -20,7 +20,7 @@ function submitButton() {
     
 
 
-    
+
     let tableBody : any = document.getElementById('tableBody');
 
     tableBody.innerHTML +=
@@ -38,6 +38,8 @@ function submitButton() {
   
 
 monthlyCap += getSalaryInput / 12;
+
+// document.getElementById('over-budget').innerHTML = 'Total Monthly: $' + monthlyCap;
 
 if (monthlyCap > 20000) {
     console.log('we spent way to much money', monthlyCap);
