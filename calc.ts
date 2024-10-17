@@ -19,5 +19,17 @@ function submitButton() {
     console.log('getFirstNameInput', getFirstNameInput);
     
 
-    let tableBody = document.getElementById('tableBody');
+//     let tableBody : HTMLElement = document.getElementById('tableBody');
+
+//     tableBody.innerHTML +=
+//     ` 
+//     <tr>
+//     <td>${getFirstNameInput}</td>
+//     <td>${getLastNameInput}</td>
+//     <td>${getIdInput}</td>
+//     <td>${getTitleInput}</td>
+//     <td>$${getSalaryInput}</td>
+//     <td><button onclick='deleteButton(event)'>delete</button></td>
+//   </tr>
+//   `
 }
