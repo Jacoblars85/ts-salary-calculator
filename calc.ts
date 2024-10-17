@@ -19,19 +19,19 @@ function submitButton() {
     console.log('getFirstNameInput', getFirstNameInput);
     
 
-//     let tableBody : HTMLElement = document.getElementById('tableBody');
+    let tableBody : any = document.getElementById('tableBody');
 
-//     tableBody.innerHTML +=
-//     ` 
-//     <tr>
-//     <td>${getFirstNameInput}</td>
-//     <td>${getLastNameInput}</td>
-//     <td>${getIdInput}</td>
-//     <td>${getTitleInput}</td>
-//     <td>$${getSalaryInput}</td>
-//     <td><button onclick='deleteButton(event)'>delete</button></td>
-//   </tr>
-//   `
+    tableBody.innerHTML +=
+    ` 
+    <tr>
+    <td>${getFirstNameInput}</td>
+    <td>${getLastNameInput}</td>
+    <td>${getIdInput}</td>
+    <td>${getTitleInput}</td>
+    <td>$${getSalaryInput}</td>
+    <td><button onclick='deleteButton(event)'>delete</button></td>
+  </tr>
+  `
 
 monthlyCap += getSalaryInput / 12;
 }
