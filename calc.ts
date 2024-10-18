@@ -14,11 +14,11 @@ function submitButton(event) {
   event.preventDefault();
 
 //   Gets inputs
-  let getFirstNameInput = document.getElementById("firstNameInput") as HTMLInputElement;
-  let getLastNameInput = document.getElementById("lastNameInput") as HTMLInputElement;
-  let getIdInput = document.getElementById("idInput") as HTMLInputElement;
-  let getTitleInput = document.getElementById("titleInput") as HTMLInputElement;
-  let getSalaryInput = document.getElementById("annualSalaryInput") as HTMLInputElement;
+//   let getFirstNameInput = document.getElementById("firstNameInput") as HTMLInputElement;
+//   let getLastNameInput = document.getElementById("lastNameInput") as HTMLInputElement;
+//   let getIdInput = document.getElementById("idInput") as HTMLInputElement;
+//   let getTitleInput = document.getElementById("titleInput") as HTMLInputElement;
+//   let getSalaryInput = document.getElementById("annualSalaryInput") as HTMLInputElement;
 
 //   Clears input
 //   document.getElementById('firstNameInput').value = '';
@@ -30,7 +30,7 @@ function submitButton(event) {
   console.log("getFirstNameInput", getFirstNameInput);
 
 //   Setting the table body
-  let tableBody = document.getElementById("tableBody");
+  let tableBody : any = document.getElementById("tableBody");
 
 //   Adds inputs into the table
   tableBody.innerHTML += ` 
