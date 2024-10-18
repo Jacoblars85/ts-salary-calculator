@@ -14,11 +14,11 @@ function submitButton(event) {
   event.preventDefault();
 
 //   Gets inputs
-  let getFirstNameInput = document.getElementById("firstNameInput");
-  let getLastNameInput = document.getElementById("lastNameInput");
-  let getIdInput = document.getElementById("idInput");
-  let getTitleInput = document.getElementById("titleInput");
-  let getSalaryInput = document.getElementById("annualSalaryInput");
+  let getFirstNameInput = document.getElementById("firstNameInput") as HTMLInputElement;
+  let getLastNameInput = document.getElementById("lastNameInput") as HTMLInputElement;
+  let getIdInput = document.getElementById("idInput") as HTMLInputElement;
+  let getTitleInput = document.getElementById("titleInput") as HTMLInputElement;
+  let getSalaryInput = document.getElementById("annualSalaryInput") as HTMLInputElement;
 
 //   Clears input
 //   document.getElementById('firstNameInput').value = '';
