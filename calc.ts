@@ -4,10 +4,14 @@ let monthlyCap : number = 0;
 
 function deleteButton(event : any) {
   console.log("trying to delete");
+
+  event.target.parentElement.parentElement.remove();
 }
 
 function submitButton(event : any) {
   console.log("trying to button");
+
+  event.preventDefault();
 
 //   Gets inputs
   let getFirstNameInput : any = document.getElementById("firstNameInput");
