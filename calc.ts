@@ -1,24 +1,24 @@
 console.log("hello world");
 
-let monthlyCap : number = 0;
+let monthlyCap = 0;
 
-function deleteButton(event : any) {
+function deleteButton(event) {
   console.log("trying to delete");
 
   event.target.parentElement.parentElement.remove();
 }
 
-function submitButton(event : any) {
+function submitButton(event) {
   console.log("trying to button");
 
   event.preventDefault();
 
 //   Gets inputs
-  let getFirstNameInput : any = document.getElementById("firstNameInput");
-  let getLastNameInput : any = document.getElementById("lastNameInput");
-  let getIdInput : any = document.getElementById("idInput");
-  let getTitleInput : any = document.getElementById("titleInput");
-  let getSalaryInput : any = document.getElementById("annualSalaryInput");
+  let getFirstNameInput = document.getElementById("firstNameInput");
+  let getLastNameInput = document.getElementById("lastNameInput");
+  let getIdInput = document.getElementById("idInput");
+  let getTitleInput = document.getElementById("titleInput");
+  let getSalaryInput = document.getElementById("annualSalaryInput");
 
 //   Clears input
 //   document.getElementById('firstNameInput').value = '';
@@ -30,7 +30,7 @@ function submitButton(event : any) {
   console.log("getFirstNameInput", getFirstNameInput);
 
 //   Setting the table body
-  let tableBody : any = document.getElementById("tableBody");
+  let tableBody = document.getElementById("tableBody");
 
 //   Adds inputs into the table
   tableBody.innerHTML += ` 
@@ -45,14 +45,14 @@ function submitButton(event : any) {
   `;
 
 //   calc the monthly cap
-  monthlyCap += getSalaryInput / 12;
+//   monthlyCap += getSalaryInput / 12;
 
 //   Changes the monthly cap on screen
   // document.getElementById('over-budget').innerHTML = 'Total Monthly: $' + monthlyCap;
 
 //   Conditionally turns monthly cap p tag red
-  if (monthlyCap > 20000) {
-    console.log("we spent way to much money", monthlyCap);
-    // document.getElementById('over-budget').style.color = "red";
-  }
+//   if (monthlyCap > 20000) {
+//     console.log("we spent way to much money", monthlyCap);
+//     // document.getElementById('over-budget').style.color = "red";
+//   }
 }
