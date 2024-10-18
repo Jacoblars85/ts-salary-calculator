@@ -1,6 +1,6 @@
 console.log("hello world");
 
-let monthlyCap: number = 0;
+let monthlyCap : number = 0;
 
 function deleteButton() {
   console.log("trying to delete");
@@ -9,15 +9,15 @@ function deleteButton() {
 function submitButton() {
   console.log("trying to button");
 
-  let getFirstNameInput: any = document.getElementById("firstNameInput");
-  let getLastNameInput: any = document.getElementById("lastNameInput");
-  let getIdInput: any = document.getElementById("idInput");
-  let getTitleInput: any = document.getElementById("titleInput");
-  let getSalaryInput: any = document.getElementById("annualSalaryInput");
+  let getFirstNameInput : any = document.getElementById("firstNameInput");
+  let getLastNameInput : any = document.getElementById("lastNameInput");
+  let getIdInput : any = document.getElementById("idInput");
+  let getTitleInput : any = document.getElementById("titleInput");
+  let getSalaryInput : any = document.getElementById("annualSalaryInput");
 
   console.log("getFirstNameInput", getFirstNameInput);
 
-  let tableBody: any = document.getElementById("tableBody");
+  let tableBody : any = document.getElementById("tableBody");
 
   tableBody.innerHTML += ` 
     <tr>
