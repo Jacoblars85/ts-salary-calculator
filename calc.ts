@@ -39,5 +39,3 @@ function submitButton() {
     // document.getElementById('over-budget').style.color = "red";
   }
 }
-
-// delete the tests folder and file
