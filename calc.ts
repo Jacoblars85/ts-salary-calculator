@@ -2,11 +2,11 @@ console.log("hello world");
 
 let monthlyCap : number = 0;
 
-function deleteButton() {
+function deleteButton(event : any) {
   console.log("trying to delete");
 }
 
-function submitButton() {
+function submitButton(event : any) {
   console.log("trying to button");
 
 //   Gets inputs
