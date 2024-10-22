@@ -20,7 +20,7 @@ function submitButton(event) {
   let getTitleInput: any = document.getElementById("titleInput") as HTMLInputElement;
   let getSalaryInput: any = document.getElementById("annualSalaryInput") as HTMLInputElement;
 
-  console.log("getFirstNameInput", getFirstNameInput);
+  console.log("getFirstNameInput", getFirstNameInput.value);
 
 //   Setting the table body
   let tableBody: any = document.getElementById("tableBody");
@@ -28,11 +28,11 @@ function submitButton(event) {
 //   Adds inputs into the table
   tableBody.innerHTML += ` 
     <tr>
-    <td>${getFirstNameInput}</td>
-    <td>${getLastNameInput}</td>
-    <td>${getIdInput}</td>
-    <td>${getTitleInput}</td>
-    <td>$${getSalaryInput}</td>
+    <td>${getFirstNameInput.value}</td>
+    <td>${getLastNameInput.value}</td>
+    <td>${getIdInput.value}</td>
+    <td>${getTitleInput.value}</td>
+    <td>$${getSalaryInput.value}</td>
     <td><button onclick='deleteButton(event)'>delete</button></td>
   </tr>
   `;
