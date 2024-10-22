@@ -37,6 +37,12 @@ function submitButton(event) {
   </tr>
   `;
 
+  getFirstNameInput.value = '';
+  getLastNameInput.value = '';
+  getIdInput.value = '';
+  getTitleInput.value = '';
+  getSalaryInput.value = '';
+
 //   calc the monthly cap
   monthlyCap += getSalaryInput / 12;
 
