@@ -37,6 +37,7 @@ function submitButton(event) {
   </tr>
   `;
 
+//   Clears inputs after submittion
   getFirstNameInput.value = '';
   getLastNameInput.value = '';
   getIdInput.value = '';
@@ -47,6 +48,7 @@ function submitButton(event) {
   monthlyCap += getSalaryInput / 12;
 
 //   Changes the monthly cap on screen
+// let monthlyCapPTag: any = document.getElementById("over-budget") as HTMLHeadingElement;
   document.getElementById('over-budget').innerHTML = 'Total Monthly: $' + monthlyCap;
 
 //   Conditionally turns monthly cap p tag red
