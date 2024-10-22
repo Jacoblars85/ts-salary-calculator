@@ -1,6 +1,6 @@
 console.log("hello world");
 
-let monthlyCap = 0;
+let monthlyCap: number = 0;
 
 function deleteButton(event) {
   console.log("trying to delete");
@@ -23,7 +23,7 @@ function submitButton(event) {
   console.log("getFirstNameInput", getFirstNameInput);
 
 //   Setting the table body
-  let tableBody : any = document.getElementById("tableBody");
+  let tableBody: any = document.getElementById("tableBody");
 
 //   Adds inputs into the table
   tableBody.innerHTML += ` 
