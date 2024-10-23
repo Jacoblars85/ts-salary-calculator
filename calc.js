@@ -13,7 +13,7 @@ function submitButton(event) {
     var getIdInput = document.getElementById("idInput");
     var getTitleInput = document.getElementById("titleInput");
     var getSalaryInput = document.getElementById("annualSalaryInput");
-    console.log("getSalaryInput", getSalaryInput.value);
+    console.log("getFirstNameInput", getFirstNameInput.value);
     //   Setting the table body
     var tableBody = document.getElementById("tableBody");
     //   Adds inputs into the table
@@ -28,7 +28,7 @@ function submitButton(event) {
     monthlyCap += getSalaryInput / 12;
     //   Changes the monthly cap on screen
     var monthlyCapPTag = document.getElementById("over-budgetHeader");
-    monthlyCapPTag.innerHTML = 'Total Monthly: $' + monthlyCap;
+    monthlyCapPTag.textContent = 'Total Monthly: $' + monthlyCap;
     //   Conditionally turns monthly cap p tag red
     if (monthlyCap > 20000) {
         console.log("we spent way to much money", monthlyCap);
