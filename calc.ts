@@ -55,6 +55,6 @@ monthlyCapPTag.textContent = 'Total Monthly: $' + monthlyCap;
 //   Conditionally turns monthly cap p tag red
   if (monthlyCap > 20000) {
     console.log("we spent way to much money", monthlyCap);
-    // document.getElementById('over-budget').style.color = "red";
+    monthlyCapPTag.style.color = "red";
   }
 }
