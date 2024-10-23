@@ -18,14 +18,16 @@ function submitButton(event) {
     var tableBody = document.getElementById("tableBody");
     //   Adds inputs into the table
     tableBody.innerHTML += " \n    <tr>\n    <td>".concat(getFirstNameInput.value, "</td>\n    <td>").concat(getLastNameInput.value, "</td>\n    <td>").concat(getIdInput.value, "</td>\n    <td>").concat(getTitleInput.value, "</td>\n    <td>$").concat(getSalaryInput.value, "</td>\n    <td><button onclick='deleteButton(event)'>delete</button></td>\n  </tr>\n  ");
+    console.log(monthlyCap, 'monthlyCap');
+    //   calc the monthly cap
+    monthlyCap += Number(getSalaryInput.value) / 12;
+    console.log(monthlyCap, 'monthlyCap');
     //   Clears inputs after submittion
     getFirstNameInput.value = '';
     getLastNameInput.value = '';
     getIdInput.value = '';
     getTitleInput.value = '';
     getSalaryInput.value = '';
-    //   calc the monthly cap
-    monthlyCap += getSalaryInput / 12;
     //   Changes the monthly cap on screen
     var monthlyCapPTag = document.getElementById("over-budgetHeader");
     monthlyCapPTag.textContent = 'Total Monthly: $' + monthlyCap;
