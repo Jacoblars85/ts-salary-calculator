@@ -1,6 +1,6 @@
 console.log("hello world");
 
-let monthlyCap: any = 0;
+let monthlyCap: number = 0;
 
 function deleteButton(event) {
   console.log("trying to delete");
@@ -37,18 +37,25 @@ function submitButton(event) {
   </tr>
   `;
 
+  console.log(monthlyCap, 'monthlyCap');
+
+
+  //   calc the monthly cap
+    monthlyCap += Number(getSalaryInput.value) / 12;
+  
+    console.log(monthlyCap, 'monthlyCap');
+
 //   Clears inputs after submittion
   getFirstNameInput.value = '';
   getLastNameInput.value = '';
   getIdInput.value = '';
   getTitleInput.value = '';
   getSalaryInput.value = '';
-
-//   calc the monthly cap
-  monthlyCap += getSalaryInput / 12;
+  
 
 //   Changes the monthly cap on screen
 let monthlyCapPTag: any = document.getElementById("over-budgetHeader") as HTMLParagraphElement;
+
 monthlyCapPTag.textContent = 'Total Monthly: $' + monthlyCap;
 
 //   Conditionally turns monthly cap p tag red
