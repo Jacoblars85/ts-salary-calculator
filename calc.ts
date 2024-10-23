@@ -37,13 +37,8 @@ function submitButton(event) {
   </tr>
   `;
 
-  console.log(monthlyCap, 'monthlyCap');
-
-
   //   calc the monthly cap
     monthlyCap += Number(getSalaryInput.value) / 12;
-  
-    console.log(monthlyCap, 'monthlyCap');
 
 //   Clears inputs after submittion
   getFirstNameInput.value = '';
@@ -52,7 +47,6 @@ function submitButton(event) {
   getTitleInput.value = '';
   getSalaryInput.value = '';
   
-
 //   Changes the monthly cap on screen
 let monthlyCapPTag: any = document.getElementById("over-budgetHeader") as HTMLParagraphElement;
 
