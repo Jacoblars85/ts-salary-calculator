@@ -20,8 +20,6 @@ function submitButton(event) {
   let getTitleInput: any = document.getElementById("titleInput") as HTMLInputElement;
   let getSalaryInput: any = document.getElementById("annualSalaryInput") as HTMLInputElement;
 
-  console.log("getFirstNameInput", getFirstNameInput.value);
-
 //   Setting the table body
   let tableBody: any = document.getElementById("tableBody");
 
