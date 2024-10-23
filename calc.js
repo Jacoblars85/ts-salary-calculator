@@ -13,7 +13,6 @@ function submitButton(event) {
     var getIdInput = document.getElementById("idInput");
     var getTitleInput = document.getElementById("titleInput");
     var getSalaryInput = document.getElementById("annualSalaryInput");
-    console.log("getFirstNameInput", getFirstNameInput.value);
     //   Setting the table body
     var tableBody = document.getElementById("tableBody");
     //   Adds inputs into the table
